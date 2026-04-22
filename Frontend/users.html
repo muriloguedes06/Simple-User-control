@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Usuários</title>
+        <link rel="stylesheet" href="./assets/css/dashboard.css">
+    </head>
+    <body>
+
+    <nav class="navbar">
+        <div>Admin</div>
+        <div class="nav-right">
+            <a href="dashboard.html">Home</a>
+            <a href="users.html">Usuários</a>
+            <button onclick="logout()">Sair</button>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="table-container">
+            <table class="users-table">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Nome</th>
+                        <th>Email</th>
+                        <th>Ações</th>
+                    </tr>
+                </thead>
+
+                <tbody id="users-tbody">
+                </tbody>
+            </table>
+        </div>
+
+    </div>
+
+    <div id="edit-modal" class="modal hidden">
+        <div class="modal-box">
+            <h2>Editar usuário</h2>
+
+            <input id="edit-name" placeholder="Nome">
+            <input id="edit-email" placeholder="Email">
+
+            <button class="action-btn" onclick="saveEdit()">Salvar</button>
+            <button class="action-btn" onclick="closeModal()">Cancelar</button>
+        </div>
+    </div>
+
+    <script src="./assets/js/dashboard.js"></script>
+    <script src="./assets/js/users.js"></script>
+
+    </body>
+</html>

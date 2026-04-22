@@ -1,0 +1,143 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #5f0a87, #a4508b, #ff7eb3);
+    font-family: Arial, sans-serif;
+}
+
+.box {
+    position: relative;
+    width: 320px;
+    height: 340px;
+}
+
+.navbar {
+    width: 99%;
+    height: 60px;
+    background: #161616;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+    color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.nav-right {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.navbar button {
+    background: #a4508b;
+    border: none;
+    padding: 6px 10px;
+    border-radius: 6px;
+    color: white;
+    cursor: pointer;
+}
+
+body {
+    padding-top: 70px;
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-box {
+    background: #161616;
+    padding: 20px;
+    border-radius: 8px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: white;
+}
+
+.hidden {
+    display: none;
+}
+
+.table-container {
+    width: 100%;
+    overflow-x: auto;
+    margin-top: 20px;
+}
+
+.users-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #161616;
+    color: white;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.users-table th,
+.users-table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #2a2a2a;
+    font-size: 14px;
+}
+
+.users-table th {
+    background: #1f1f1f;
+    font-weight: bold;
+}
+
+.action-btn {
+    padding: 6px 10px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-right: 5px;
+    font-size: 12px;
+}
+
+.edit-btn {
+    background: #a4508b;
+    color: white;
+}
+
+.delete-btn {
+    background: #e74c3c;
+    color: white;
+}
+
+input {
+    padding: 10px;
+    border-radius: 6px;
+    border: none;
+    background: #2a2a2a;
+    color: white;
+}
